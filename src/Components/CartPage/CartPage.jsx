@@ -78,7 +78,7 @@ const CartPage = () => {
           <td>
             <button
               onClick={() => deleteCartItem(product.id, product.quantity)}
-              className="btn btn-dark mt-2"
+              className="btn btn-dark mt-3 mx-2"
             >
               Delete
             </button>
@@ -97,7 +97,7 @@ const CartPage = () => {
             </h3>
           </div>
           <div className="table-responsive">
-            <Table className="text-center ">
+            <Table  className=" table-responsive text-center ">
               <thead>
                 <tr>
                   <th>Product Name</th>
