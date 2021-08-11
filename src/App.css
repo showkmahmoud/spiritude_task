@@ -23,16 +23,29 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* main colors*/
+:root{
+  /* to call it var(--main-color) */
+  --main-color:#24AEB1; 
+  --sec-color:#262626;
+  --nav-items-color:#fff;
+  --price-color:#F34770;
+  --blogs-title:#1D2A38;
+  --paragraph-color:#7D879C;
 }
+/* Ending main colors*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section_title {
+  color: var(--sec-color) ;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+.section_title::after{
+  content: '';
+  margin: 15px auto 0;
+  background-color: var(--price-color) ;
+  display: block;
+  width: 70px;
+  height: 3px;
 }
