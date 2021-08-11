@@ -36,9 +36,9 @@ const NavbarComponent = (props) => {
               </NavItem>
             </Nav>
             <NavbarText className=" px-2 w-25">
-              <MdAddShoppingCart className="cartIcon navbar_items" />
               <Link className="text-dark navbar_items text-decoration-none" to="/CartPage">
-                 {store.cart.cartCounter}
+              <MdAddShoppingCart className="cartIcon navbar_items" />
+                 <span style={{color:"#F34770"}}>{store.cart.cartCounter}</span>
               </Link>
             </NavbarText>
           </Collapse>
