@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import  {AvForm}  from "availity-reactstrap-validation";
-import AvInput from "availity-reactstrap-validation/lib/AvInput";
 import { BsFillPersonFill } from "react-icons/bs";
 import { auth, handleUserProfile } from "../../Firebase/config";
 import { FormGroup } from "reactstrap";
@@ -112,14 +111,14 @@ const SignUp = () => {
               <div className="text-danger mb-2">{error}</div>
               <p className="text-center mt-4 mb-2">
                 Have an account 
-                <span >
+                 <span >
                    <Link to="/SignIn" className="sign_up_link">
                      Sign in
-                  </Link>
+                   </Link>
                 </span>
               </p>
               <button
-                className="btn btn-primary text-capitalize rounded-pill w-75 my-3 mx-auto "
+                className="btn btn-primary text-capitalize rounded-pill w-100 my-3 mx-auto "
                 type="submit"
               >
                 register

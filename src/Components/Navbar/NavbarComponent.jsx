@@ -20,21 +20,7 @@ const NavbarComponent = ({user}) => {
   const toggle = () => setIsOpen(!isOpen);
   // eslint-disable-next-line 
   const [name, setName] = useState("");
-  // useEffect(async () => {
-   
-  // }, [user]);
-
-// // eslint-disable-next-line
-// useEffect(async () => {
-//   console.log(user);
-//   if (user.currentUser) {
-//     const userInfo = await firestore
-//       .doc(`users/${user.currentUser.id}`)
-//       .get();
-//     setName(userInfo.data().displayName);
-//   }
-// }, [user]);
-
+ 
   useEffect(() => {
       const fetchData = async () =>{
         if (user.currentUser) {
@@ -61,7 +47,7 @@ const NavbarComponent = ({user}) => {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="w-100 justify-content-between pt-2" navbar>
-              <NavItem className="mx-5 mt-md-2">
+              <NavItem className="mx-5 mt-md-2 mt-lg-0">
                 <Link className="text-dark " to="/">
                   Home
                 </Link>
