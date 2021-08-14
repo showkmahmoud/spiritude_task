@@ -33,6 +33,9 @@
   --blogs-title:#1D2A38;
   --paragraph-color:#7D879C;
 }
+a{
+  text-decoration: none !important;
+}
 /* Ending main colors*/
 
 .section_title {
